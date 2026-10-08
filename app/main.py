@@ -9,7 +9,6 @@ app = Flask(__name__)
 cache = redis.Redis(
     host=os.environ.get("REDIS_HOST", "cache"),
     port=int(os.environ.get("REDIS_PORT", "6379")),
-    decode_responses=True,
 )
 
 
